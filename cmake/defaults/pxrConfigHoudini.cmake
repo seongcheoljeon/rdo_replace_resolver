@@ -2,14 +2,15 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 
 set(PXR_INCLUDE_DIRS ${USD_LOCATION}/toolkit/include)
 set(USD_PLUGINS_DIR ${USD_LOCATION}/dsolib/usd_plugins)
-set(USD_PYTHONPATH ${USD_LOCATION}/python/lib/python2.7/site-packages)
+set(USD_PYTHONPATH ${USD_LOCATION}/python/lib/python3.9/site-packages)
 
 set(_DSOLIB_DIR "${USD_LOCATION}/dsolib")
 set(_PYTHONLIB_DIR "${USD_LOCATION}/python/lib")
-set(_PYTHONINCLUDE_DIR "${USD_LOCATION}/python/include/python2.7")
+set(_PYTHONINCLUDE_DIR "${USD_LOCATION}/python/include/python3.9")
 
-set(_LIB_BOOST_PYTHON "${_DSOLIB_DIR}/libhboost_python-mt.so")
-set(_LIB_PYTHON "${_PYTHONLIB_DIR}/libpython2.7.so")
+#set(_LIB_BOOST_PYTHON "${_DSOLIB_DIR}/libhboost_python-mt.so")
+set(_LIB_BOOST_PYTHON "${_DSOLIB_DIR}/libhboost_python39-mt-x64.so")
+set(_LIB_PYTHON "${_PYTHONLIB_DIR}/libpython3.9.so")
 set(_LIB_TBB "${_DSOLIB_DIR}/libtbb.so")
 
 set(_COMPONENTS
